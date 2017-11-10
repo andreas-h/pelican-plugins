@@ -1,3 +1,5 @@
+(package-initialize)
+(require 'htmlize nil t)
 (require 'json)
 (require 'org)
 (require 'ox)
