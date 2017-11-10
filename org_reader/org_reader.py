@@ -100,11 +100,13 @@ class OrgReader(readers.BaseReader):
                     'slug': json_output['slug'] or default_slug,
                     'modified': json_output['modified'] or '',
                     'tags': json_output['tags'] or '',
+                    'bibtex': json_output['bibtex'] or '',
+                    'template': json_output['template'] or '',
                     'save_as': json_output['save_as'] or '',
                     'summary': json_output['summary'] or ''}
 
         # remove empty strings when necessary
-        for key in ['save_as', 'modified', 'lang', 'summary']:
+        for key in ['save_as', 'modified', 'lang', 'summary', 'bibtex', 'template']:
             if not metadata[key]:
                 metadata.pop(key)
 

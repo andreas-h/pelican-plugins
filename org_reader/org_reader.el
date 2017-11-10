@@ -45,6 +45,8 @@
                  ; custom org file properties, defined as #+PROPERTY: NAME ARG
                  :language (cdr (assoc-string "LANGUAGE" org-file-properties t))
                  :save_as (cdr (assoc-string "SAVE_AS" org-file-properties t))
+                 :bibtex (cdr (assoc-string "BIBTEX" org-file-properties t))
+                 :template (cdr (assoc-string "TEMPLATE" org-file-properties t))
                  :tags (cdr (assoc-string "TAGS" org-file-properties t))
                  :summary (cdr (assoc-string "SUMMARY" org-file-properties t))
                  :slug (cdr (assoc-string "SLUG" org-file-properties t))
